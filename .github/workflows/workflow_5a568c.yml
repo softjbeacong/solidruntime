@@ -1,0 +1,12 @@
+name: Continuous Integration
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update cache
+        run: echo "ready"
